@@ -1,0 +1,35 @@
+{
+  "name": "capeandbay/leadbinder-trapper-keeper",
+  "description": "TrapperKeeper - The Official LeadBinder API SDK for Laravel",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Angel Gonzalez",
+      "email": "angel@capeandbay.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "laravel/framework": "5.8.*|^6.0",
+    "ixudra/curl": "^6.17"
+  },
+  "autoload": {
+    "psr-4": {
+      "CapeAndBay\\LeadBinder\\TrapperKeeper\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "branch-alias": {
+        "dev-master": "0.0.1-dev"
+      },
+      "providers": [
+        "CapeAndBay\\LeadBinder\\TrapperKeeper\\TrapperKeeperServiceProvider"
+      ],
+      "aliases": {
+        "TrapperKeeper": "CapeAndBay\\LeadBinder\\TrapperKeeper\\Facades\\TrapperKeeper"
+      }
+    }
+  }
+}
