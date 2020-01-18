@@ -7,12 +7,12 @@ use Illuminate\Support\Facades\Log;
 
 class LeadBinderAPIClientService
 {
-    protected $root_url = 'http://lb-public-api.capeandbay.test';
+    protected $root_url = 'http://lb-public-api.capeandbay.com';
     protected $api_url = '/api';
 
     public function __construct()
     {
-
+        $this->root_url = env('LEADBINDER_API_URL','http://lb-public-api.capeandbay.com');
     }
 
     public function api_url()
